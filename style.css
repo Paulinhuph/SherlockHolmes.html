@@ -1,3 +1,5 @@
+/* ===== index ===== */
+
 :root { 
     --cor-principal: #eaeaea;
     --fonte-principal: "Playfair Display", serif;
@@ -6,6 +8,25 @@
     --cor-destaque: #8B5E34;
     --cor-links: #4DA3C7;
 }
+
+.cabecalho {
+    padding: 2% 0% 0% 15%;
+
+}
+
+.cabecalho__menu__link {
+    font-family: var(--fonte-principal);
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--cor-leitura);
+    text-decoration: none;
+}
+
+.cabecalho__menu {
+    display: flex;
+    gap: 80px;
+}
+
 
 * {
     margin: 0;
@@ -199,9 +220,11 @@ body {
     flex-direction: column;
     gap: 10px;
 }
-
-
-
+.rodape__github {
+    text-decoration: none;
+    color: var(--cor-secundaria);
+    border: 1px solid var(--cor-principal);
+}
 
 /* Responsividade */
 
@@ -293,5 +316,122 @@ body {
     .rodape_inteiro {
         padding: 30px 20px;
         font-size: 14px;
+    }
+}
+
+/* ===== about ===== */
+
+/* ===== GALERIA DE LIVROS ===== */
+
+.biblioteca__apresentacao1 {
+    min-height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 32px;
+    text-align: center;
+    color: var(--cor-leitura);
+    font-size: 80px;
+    font-weight: 600;
+    font-family: var(--fonte-principal);
+}
+.biblioteca__apresentacao2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+    text-align: center;
+}
+    
+
+.galeria__literaria {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 32px;
+    padding: 80px 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Card de cada livro */
+.livro {
+    background-color: #111;
+    border: 1px solid var(--cor-destaque);
+    border-radius: 14px;
+
+    padding: 28px 24px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Efeito sutil ao passar o mouse */
+.livro:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.6);
+}
+
+/* Título do livro */
+.livro h2 {
+    font-size: 26px;
+    font-weight: 700;
+    color: var(--cor-leitura);
+    line-height: 1.2;
+}
+
+/* Descrição */
+.livro p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: var(--cor-principal);
+}
+
+/* Detalhe decorativo inferior */
+.livro::after {
+    content: "";
+    width: 60px;
+    height: 2px;
+    background-color: var(--cor-destaque);
+    margin-top: auto;
+}
+
+/* ===== RESPONSIVO ===== */
+
+@media (max-width: 768px) {
+
+    /* TÍTULO DA SEÇÃO */
+    .biblioteca__apresentacao1 {
+        font-size: 42px;
+        padding: 0 16px;
+    }
+
+    .biblioteca__apresentacao2 {
+        font-size: 16px;
+        padding: 0 20px;
+        line-height: 1.6;
+    }
+
+    /* GALERIA */
+    .galeria__literaria {
+        padding: 40px 20px;
+        gap: 24px;
+    }
+
+    /* CARD DO LIVRO */
+    .livro {
+        padding: 22px 20px;
+    }
+
+    .livro h2 {
+        font-size: 20px;
+    }
+
+    .livro p {
+        font-size: 15px;
     }
 }
