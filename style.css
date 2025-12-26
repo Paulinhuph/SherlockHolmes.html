@@ -1,0 +1,201 @@
+:root { 
+    --cor-principal: #eaeaea;
+    --fonte-principal: "Playfair Display", serif;
+    --cor-leitura: #C9A24D;
+    --cor-secundaria: #B0B0B0;
+    --cor-destaque: #8B5E34;
+    --cor-links: #4DA3C7;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+    font-family: var(--fonte-principal);
+    color: var(--cor-principal);
+}
+
+/* ===== HERO ===== */
+
+@keyframes container__principal__titulo {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.container {
+    min-height: 100vh;
+}
+
+.container__principal {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+    text-align: center;
+}
+
+.container__principal__titulo {
+    font-size: 100px;
+    font-weight: 500;
+    color: var(--cor-leitura);
+    animation: container__principal__titulo 2s ease-out forwards;
+}
+
+.container__principal__subtitulo {
+    font-size: 50px;
+    font-weight: 500;
+    color: var(--cor-secundaria);
+    animation: container__principal__titulo 2s ease-out forwards;
+}
+
+.container__principal__texto {
+    font-size: 20px;
+    max-width: 800px;
+    line-height: 1.6;
+    animation: container__principal__titulo 2s ease-out forwards;
+}
+
+/* ===== SOBRE O DETETIVE ===== */
+
+.sobre__detetive {
+    background-image:
+        linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
+        url("img/lupa.png");
+    background-size: cover;
+    background-position: center;
+
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.sobre__detetive__titulo {
+    font-size: 70px;
+    font-weight: 800;
+    color: var(--cor-leitura);
+}
+
+.sobre__detetive__texto {
+    font-size: 25px;
+    max-width: 700px;
+    line-height: 1.4;
+}
+
+.sobre__detetive__habilidades {
+    font-size: 40px;
+    font-weight: 500;
+}
+
+.habilidades {
+    list-style: none;
+    font-size: 22px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* ===== CASOS CELEBRES ===== */
+
+.casos__celebres {
+    background-image:
+        linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
+        url("img/livros.png");
+    background-size: cover;
+    background-position: center;
+
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.casos__celebres__titulo {
+    font-size: 70px;
+    font-weight: 800;
+    color: var(--cor-leitura);
+}
+
+.casos__celebres__texto {
+    font-size: 30px;
+    font-weight: 400;
+}
+
+.casos_celebres__casos {
+    background-color: #111;
+    border: 1px solid var(--cor-destaque);
+    border-radius: 12px;
+    font-size: 16px;
+    padding: 24px;
+    width: 320px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* ===== CITAÇÕES ===== */
+
+.citacoes__memoraveis {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 30px;
+    padding: 80px 20px;
+}
+
+.citacoes__memoraveis__titulo {
+    width: 100%;
+    font-size: 70px;
+    font-weight: 800;
+    color: var(--cor-leitura);
+    text-align: center;
+}
+
+.citacoes__memoraveis__citacoes {
+    background-color: #111;
+    border: 1px solid var(--cor-destaque);
+    border-radius: 12px;
+
+    padding: 24px;
+    width: 320px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+/* ===== RODAPÉ ===== */
+
+.rodape_inteiro {
+    padding: 40px 20px;
+    font-size: 15px;
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
