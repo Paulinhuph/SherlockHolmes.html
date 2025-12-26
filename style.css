@@ -199,3 +199,99 @@ body {
     flex-direction: column;
     gap: 10px;
 }
+
+
+
+
+/* Responsividade */
+
+@media (max-width: 768px) {
+
+    /* ===== HERO ===== */
+
+    .container__principal {
+        padding: 40px 20px;
+    }
+
+    .container__principal__titulo {
+        font-size: 48px;
+    }
+
+    .container__principal__subtitulo {
+        font-size: 26px;
+    }
+
+    .container__principal__texto {
+        font-size: 16px;
+        max-width: 100%;
+    }
+
+    /* ===== SOBRE O DETETIVE ===== */
+
+    .sobre__detetive {
+        padding: 60px 20px;
+        min-height: auto;
+    }
+
+    .sobre__detetive__titulo {
+        font-size: 42px;
+    }
+
+    .sobre__detetive__texto {
+        font-size: 18px;
+        line-height: 1.5;
+    }
+
+    .sobre__detetive__habilidades {
+        font-size: 28px;
+    }
+
+    .habilidades {
+        font-size: 18px;
+        gap: 6px;
+    }
+
+    /* ===== CASOS CELEBRES ===== */
+
+    .casos__celebres {
+        padding: 60px 20px;
+        min-height: auto;
+    }
+
+    .casos__celebres__titulo {
+        font-size: 42px;
+    }
+
+    .casos__celebres__texto {
+        font-size: 20px;
+    }
+
+    .casos_celebres__casos {
+        width: 100%;
+        max-width: 360px;
+        font-size: 15px;
+    }
+
+    /* ===== CITAÇÕES ===== */
+
+    .citacoes__memoraveis {
+        padding: 60px 20px;
+    }
+
+    .citacoes__memoraveis__titulo {
+        font-size: 42px;
+    }
+
+    .citacoes__memoraveis__citacoes {
+        width: 100%;
+        max-width: 360px;
+        font-size: 15px;
+    }
+
+    /* ===== RODAPÉ ===== */
+
+    .rodape_inteiro {
+        padding: 30px 20px;
+        font-size: 14px;
+    }
+}
