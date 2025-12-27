@@ -435,3 +435,138 @@ body {
         font-size: 15px;
     }
 }
+
+/* characters.html */
+
+/* ===== PERSONAGENS ===== */
+
+.personagens {
+    padding: 80px 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.personagens__titulo {
+    font-size: px;
+    font-weight: 800;
+    color: var(--cor-leitura);
+    margin-bottom: 60px;
+    font-family: var(--fonte-principal);
+}
+
+/* Container dos cards */
+.personagens__container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 40px;
+}
+
+/* Card base */
+.personagem {
+    background-color: #111;
+    border: 1px solid var(--cor-destaque);
+    border-radius: 16px;
+    padding: 36px 28px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover elegante */
+.personagem:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 14px 32px rgba(0, 0, 0, 0.6);
+}
+
+/* Título do personagem */
+.personagem h3 {
+    font-size: 32px;
+    font-weight: 700;
+    color: var(--cor-leitura);
+}
+
+/* Texto */
+.personagem p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: var(--cor-principal);
+}
+
+/* Diferenciação sutil */
+.personagem--watson {
+    border-left: 4px solid #4DA3C7; /* aliado */
+}
+
+.personagem--moriarty {
+    border-left: 4px solid #8B0000; /* antagonista */
+}
+
+/* ===== RESPONSIVO ===== */
+
+@media (max-width: 768px) {
+
+    /* HEADER */
+    .cabecalho {
+        display: flex;
+        justify-content: center;
+        padding: 20px 0;
+    }
+
+    /* MENU */
+    .cabecalho__menu {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 16px;
+        width: 100%;
+    }
+
+    /* LINKS */
+    .cabecalho__menu__link {
+        font-size: 18px;
+        padding: 10px 20px;
+        text-align: center;
+        width: fit-content;
+    }
+
+    /* CENTRALIZA TODA A SEÇÃO */
+    .personagens {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    /* GRID VIRA COLUNA E CENTRALIZA */
+    .personagens__container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    /* CARD CENTRALIZADO */
+    .personagem {
+        width: 100%;
+        max-width: 360px;
+        align-items: center;
+        text-align: center;
+    }
+
+    /* TEXTO CENTRAL */
+    .personagem p {
+        text-align: center;
+    }
+
+    /* TÍTULOS */
+    .container__principal__titulo,
+    .personagens__titulo {
+        text-align: center;
+    }
+}
+
+
