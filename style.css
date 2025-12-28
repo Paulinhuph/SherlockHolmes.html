@@ -22,6 +22,12 @@
     text-decoration: none;
 }
 
+.cabecalho__menu__link.ativo {
+    color: var(--cor-leitura);
+    border-bottom: 2px solid var(--cor-leitura);
+}
+
+
 .cabecalho__menu {
     display: flex;
     gap: 80px;
@@ -247,6 +253,7 @@ body {
     .container__principal__texto {
         font-size: 16px;
         max-width: 100%;
+        color: var(--cor-principal);
     }
 
     /* ===== SOBRE O DETETIVE ===== */
@@ -568,5 +575,31 @@ body {
         text-align: center;
     }
 }
+/* Autor */
+.container__autor__texto {
+    font-size: 20px;
+    max-width: 800px;
+    line-height: 1.6;
+    animation: container__principal__titulo 2s ease-out forwards;
+    border-left: 4px solid var(--cor-leitura); 
+}
+    
+.imagem__arthur {
+    width: auto;
+    height: 550px;
+}
 
-
+@media (max-width: 768px) {
+    .imagem__arthur {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: auto;
+        height: 500px;
+    }
+    .container__autor__texto {
+        font-size: 16px;
+        max-width: 100%;
+        color: var(--cor-principal);
+    }
+}
