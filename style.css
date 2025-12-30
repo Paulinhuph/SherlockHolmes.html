@@ -133,8 +133,12 @@ body {
 }
 
 .habilidades {
-    list-style: none;
-    font-size: 22px;
+    background-color: #111;
+    border: 1px solid var(--cor-destaque);
+    border-radius: 12px;
+    font-size: 16px;
+    padding: 24px;
+    width: 320px;
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -603,3 +607,4 @@ body {
         color: var(--cor-principal);
     }
 }
+
