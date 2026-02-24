@@ -135,13 +135,15 @@ body {
 .habilidades {
     background-color: #111;
     border: 1px solid var(--cor-destaque);
-    border-radius: 12px;
-    font-size: 16px;
-    padding: 24px;
-    width: 320px;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-    gap: 40px;
+    border-radius: 14px;
+    
+    padding: 28px 24px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 /* ===== CASOS CELEBRES ===== */
@@ -607,6 +609,7 @@ body {
         color: var(--cor-principal);
     }
 }
+
 
 
 
