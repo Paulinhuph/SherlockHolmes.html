@@ -139,9 +139,9 @@ body {
     font-size: 16px;
     padding: 24px;
     width: 320px;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 40px;
 }
 
 /* ===== CASOS CELEBRES ===== */
@@ -607,4 +607,5 @@ body {
         color: var(--cor-principal);
     }
 }
+
 
